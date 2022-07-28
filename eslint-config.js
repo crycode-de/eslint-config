@@ -332,6 +332,7 @@ module.exports = {
     '@typescript-eslint/restrict-plus-operands': [
       'error',
       {
+        allowAny: true,
         checkCompoundAssignments: true,
       },
     ],

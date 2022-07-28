@@ -48,6 +48,11 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+
+* Set `allowAny` to `true` for rule [@typescript-eslint/restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands/)
+
 ### 1.0.0 (2022-07-26)
 
 * First release
