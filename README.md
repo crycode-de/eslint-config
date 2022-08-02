@@ -48,6 +48,10 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Set format for enum members to PascalCase or UPPER_CASE
+
 ### 1.0.1 (2022-07-28)
 
 * Set `allowAny` to `true` for rule [@typescript-eslint/restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands/)
