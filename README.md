@@ -48,7 +48,7 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.2 (2022-08-02)
 
 * Set format for enum members to PascalCase or UPPER_CASE
 
