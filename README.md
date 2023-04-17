@@ -48,6 +48,10 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Removed deprecated `private-abstract-*` from member ordering
+
 ### 1.0.2 (2022-08-02)
 
 * Set format for enum members to PascalCase or UPPER_CASE
@@ -64,7 +68,7 @@ module.exports = {
 
 MIT License
 
-Copyright (c) 2021-2022 Peter Müller <peter@crycode.de>
+Copyright (c) 2021-2023 Peter Müller <peter@crycode.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
