@@ -140,7 +140,6 @@ module.exports = {
           // Fields
           'public-abstract-field',
           'protected-abstract-field',
-          'private-abstract-field',
 
           'public-static-field',
           'protected-static-field',
@@ -186,7 +185,6 @@ module.exports = {
           'protected-instance-method',
           'protected-method',
 
-          'private-abstract-method',
           'private-static-method',
           //'private-decorated-method',
           'private-instance-method',
