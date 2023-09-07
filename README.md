@@ -48,7 +48,7 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.2.1 (2023-09-07)
 
 * Replaced deprecated rule `@typescript-eslint/no-duplicate-imports` with `import/no-duplicates` (added dependency to `eslint-plugin-import`)
 * Renamed rule `@typescript-eslint/no-parameter-properties` to `@typescript-eslint/parameter-properties`
