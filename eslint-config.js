@@ -250,7 +250,7 @@ module.exports = {
 
     '@typescript-eslint/no-namespace': 'error',
 
-    '@typescript-eslint/no-parameter-properties': 'error',
+    '@typescript-eslint/parameter-properties': 'error',
 
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',

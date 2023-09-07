@@ -1,6 +1,6 @@
 # ESLint config
 
-This modules provides an ESLint configuration to be used with TypeScript
+This modules provides an ESLint configuration to be used with **TypeScript**
 according to my personal preferences.
 
 ## Usage
@@ -48,6 +48,11 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Replaced deprecated rule `@typescript-eslint/no-duplicate-imports` with `import/no-duplicates` (added dependency to `eslint-plugin-import`)
+* Renamed rule `@typescript-eslint/no-parameter-properties` to `@typescript-eslint/parameter-properties`
+
 ### 1.2.0 (2023-09-07)
 
 * Fixed rule `@typescript-eslint/restrict-plus-operands`
