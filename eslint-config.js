@@ -331,7 +331,6 @@ module.exports = {
       'error',
       {
         allowAny: true,
-        checkCompoundAssignments: true,
       },
     ],
 
