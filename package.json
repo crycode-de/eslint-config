@@ -1,6 +1,6 @@
 {
   "name": "@crycode/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ESLint configuration to be used with TypeScript according to my personal preferences",
   "main": "eslint-config.js",
   "scripts": {
