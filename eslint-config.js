@@ -221,10 +221,10 @@ module.exports = {
     'no-console': 'error',
 
     'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': [
+    'import/no-duplicates': [
       'error',
       {
-        includeExports: true,
+        considerQueryString: true,
       },
     ],
 
