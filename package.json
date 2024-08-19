@@ -1,9 +1,12 @@
 {
   "name": "@crycode/eslint-config",
   "version": "1.2.2",
-  "description": "ESLint configuration to be used with TypeScript according to my personal preferences",
-  "main": "eslint-config.js",
+  "description": "ESLint configuration to be used with JavaScript or TypeScript according to my personal preferences",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
   "scripts": {
+    "lint": "eslint .",
     "release": "release-script"
   },
   "author": {
@@ -14,11 +17,13 @@
   "keywords": [
     "eslint",
     "eslintconfig",
+    "javascript",
     "typescript"
   ],
   "license": "MIT",
   "files": [
-    "eslint-config.js",
+    "index.js",
+    "configs/*.js",
     "*.md"
   ],
   "repository": {
@@ -26,17 +31,19 @@
     "url": "https://github.com/crycode-de/eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-plugin-import": "^2.28.1"
+    "@eslint/js": "^9.9.0",
+    "@stylistic/eslint-plugin": "^2.6.4",
+    "@stylistic/eslint-plugin-js": "^2.6.4",
+    "@types/eslint__js": "^8.42.3"
   },
   "peerDependencies": {
-    "eslint": "^8.48.0"
+    "eslint": "^9.9.0",
+    "typescript-eslint": "^8.1.0"
   },
   "devDependencies": {
-    "@alcalzone/release-script": "^3.6.0",
-    "@alcalzone/release-script-plugin-license": "^3.5.9",
-    "@alcalzone/release-script-plugin-manual-review": "^3.5.9"
+    "@alcalzone/release-script": "^3.8.0",
+    "@alcalzone/release-script-plugin-license": "^3.7.0",
+    "@alcalzone/release-script-plugin-manual-review": "^3.7.0",
+    "eslint": "^9.9.0"
   }
 }

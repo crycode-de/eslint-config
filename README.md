@@ -11,36 +11,47 @@ Add `eslint` and `@crycode/eslint-config` to your devDependencies:
 npm install --save-dev eslint @crycode/eslint-config
 ```
 
-Add a file named `.eslintrc.js` to your project root directory:
+For TypeScript also add `typescript-eslint`:
 
-```js
-module.exports = {
-  extends: [
-    '@crycode/eslint-config'
-  ],
-  parserOptions: {
-    project: [
-      './tsconfig.json',
-    ],
-  },
-};
+```shell
+npm install --save-dev typescript-eslint
 ```
 
-If you habe multiple tsconfig files, add them all to `project` like this:
+Add a file named `eslint.config.js` to your project root directory:
 
 ```js
-module.exports = {
-  extends: [
-    '@crycode/eslint-config'
-  ],
-  parserOptions: {
-    project: [
-      './tsconfig.backend.json',
-      './tsconfig.frontend.json',
-    ],
-  },
-};
+import crycode from '@crycode/eslint-config';
+
+export default [
+  ...crycode.configs.js,
+  ...crycode.configs.stylistic,
+];
 ```
+
+Or for TypeScript:
+
+```ts
+import tseslint from 'typescript-eslint';
+import crycode from '@crycode/eslint-config';
+
+export default tseslint.config(
+  ...crycode.configs.ts,
+  ...crycode.configs.stylistic,
+  {
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+        project: [
+          './tsconfig.json',
+        ],
+      },
+    },
+  },
+);
+```
+
+If you habe multiple tsconfig files, add them all to `project` array:
 
 ## Changelog
 
@@ -48,6 +59,12 @@ module.exports = {
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Migrate to eslint 9
+* Provide configs for TS and JS from a single package
+* Removed `eslint-plugin-import` for now since it's not ready for eslint 9 for now
+
 ### 1.2.2 (2023-09-07)
 
 * Fixed usage of `eslint-plugin-import`
