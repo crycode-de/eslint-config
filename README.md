@@ -59,7 +59,7 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 2.0.0 (2024-08-19)
 
 * Migrate to eslint 9
 * Provide configs for TS and JS from a single package

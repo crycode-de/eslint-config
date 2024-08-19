@@ -1,6 +1,6 @@
 {
   "name": "@crycode/eslint-config",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "ESLint configuration to be used with JavaScript or TypeScript according to my personal preferences",
   "main": "index.js",
   "types": "index.d.ts",
