@@ -59,6 +59,10 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Added missing typescript definitions to npm package
+
 ### 2.0.0 (2024-08-19)
 
 * Migrate to eslint 9
