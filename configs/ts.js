@@ -208,7 +208,10 @@ export default [
       ],
 
       'no-return-await': 'off',
-      '@typescript-eslint/return-await': 'warn',
+      '@typescript-eslint/return-await': [
+        'warn',
+        'always',
+      ],
 
       '@typescript-eslint/switch-exhaustiveness-check': 'warn',
 
