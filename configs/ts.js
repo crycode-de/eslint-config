@@ -3,8 +3,8 @@ import js from './js.js';
 
 export default [
   ...js,
-  ...tseslint.configs.recommended,
-  ...tseslint.configs.stylistic,
+  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
   {
     languageOptions: {
       parserOptions: {
@@ -124,6 +124,8 @@ export default [
 
       '@typescript-eslint/no-confusing-non-null-assertion': 'error',
 
+      '@typescript-eslint/no-deprecated': 'warn',
+
       'no-implied-eval': 'off',
       '@typescript-eslint/no-implied-eval': 'error',
 
@@ -137,6 +139,13 @@ export default [
 
       'no-loss-of-precision': 'off',
       '@typescript-eslint/no-loss-of-precision': 'error',
+
+      '@typescript-eslint/no-misused-promises': [
+        'error',
+        {
+          checksVoidReturn: false,
+        },
+      ],
 
       '@typescript-eslint/no-namespace': 'error',
 
@@ -189,6 +198,8 @@ export default [
 
       '@typescript-eslint/prefer-optional-chain': 'warn',
 
+      '@typescript-eslint/prefer-regexp-exec': 'warn',
+
       '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
       '@typescript-eslint/prefer-ts-expect-error': 'warn',
@@ -200,12 +211,16 @@ export default [
         },
       ],
 
+      '@typescript-eslint/require-await': 'warn',
+
       '@typescript-eslint/restrict-plus-operands': [
         'error',
         {
           allowAny: true,
         },
       ],
+
+      '@typescript-eslint/restrict-template-expressions': 'off',
 
       'no-return-await': 'off',
       '@typescript-eslint/return-await': [
@@ -214,6 +229,8 @@ export default [
       ],
 
       '@typescript-eslint/switch-exhaustiveness-check': 'warn',
+
+      '@typescript-eslint/unbound-method': 'off',
 
       '@typescript-eslint/unified-signatures': 'warn',
     },
