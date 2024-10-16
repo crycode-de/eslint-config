@@ -8,4 +8,4 @@ declare const crycode: {
   };
 };
 
-export = crycode;
+export default crycode;
