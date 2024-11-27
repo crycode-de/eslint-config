@@ -228,7 +228,13 @@ export default [
         'always',
       ],
 
-      '@typescript-eslint/switch-exhaustiveness-check': 'warn',
+      '@typescript-eslint/switch-exhaustiveness-check': [
+        'warn',
+        {
+          considerDefaultExhaustiveForUnions: true,
+          requireDefaultForNonUnion: true,
+        },
+      ],
 
       '@typescript-eslint/unbound-method': 'off',
 
