@@ -59,6 +59,10 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Fixed github npm release workflow
+
 ### 3.0.0 (2026-02-20)
 
 * Updated to latest `eslint` **10** and `typescript-eslint`

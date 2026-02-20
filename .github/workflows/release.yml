@@ -8,8 +8,17 @@ on:
       # pre-releases
       - "v[0-9]+.[0-9]+.[0-9]+-**"
 
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: release-npm-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
+
     # Trigger this step only when a commit on any branch is tagged with a version number
     if: |
       contains(github.event.head_commit.message, '[skip ci]') == false &&
@@ -36,9 +45,7 @@ jobs:
           git show -s --format=%b > .gh-release-notes.txt
 
       - name: Publish package to npm
-        run: |
-          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-          npm publish --access public
+        run: npm publish --provenance
 
       - name: Create Github Release
         uses: softprops/action-gh-release@v2
