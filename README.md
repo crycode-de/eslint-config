@@ -59,6 +59,11 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Updated to latest `eslint` **10** and `typescript-eslint`
+* Updated deprecated configs for their latest options
+
 ### 2.2.1 (2025-05-02)
 
 * Updated to latest `eslint` and `typescript-eslint`
@@ -132,7 +137,7 @@ If you habe multiple tsconfig files, add them all to `project` array:
 
 MIT License
 
-Copyright (c) 2021-2025 Peter Müller <peter@crycode.de>
+Copyright (c) 2021-2026 Peter Müller <peter@crycode.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

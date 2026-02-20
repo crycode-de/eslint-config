@@ -1,7 +1,7 @@
 import stylistic from '@stylistic/eslint-plugin';
 
 export default [
-  stylistic.configs['recommended-flat'],
+  stylistic.configs['recommended'],
   {
 
     plugins: {
@@ -80,7 +80,7 @@ export default [
         'single',
         {
           avoidEscape: true,
-          allowTemplateLiterals: true,
+          allowTemplateLiterals: 'always',
         },
       ],
 
