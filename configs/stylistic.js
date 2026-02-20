@@ -71,6 +71,16 @@ export default [
 
       '@stylistic/object-curly-spacing': [ 'warn', 'always' ],
 
+      '@stylistic/operator-linebreak': [
+        'warn',
+        'before',
+        {
+          overrides: {
+            '=': 'after',
+          },
+        },
+      ],
+
       '@stylistic/padded-blocks': 'off',
 
       '@stylistic/quote-props': [ 'warn', 'as-needed' ],
