@@ -1,9 +1,11 @@
+import { defineConfig } from 'eslint/config';
+
 /*
  * Use own config to lint this project. ;-)
  */
 import crycode from './index.js';
 
-export default [
+export default defineConfig(
   ...crycode.configs.js,
   ...crycode.configs.stylistic,
   {
@@ -17,4 +19,4 @@ export default [
     },
 
   },
-];
+);

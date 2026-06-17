@@ -20,21 +20,22 @@ npm install --save-dev typescript-eslint
 Add a file named `eslint.config.js` to your project root directory:
 
 ```js
+import { defineConfig } from 'eslint/config';
 import crycode from '@crycode/eslint-config';
 
-export default [
+export default defineConfig(
   ...crycode.configs.js,
   ...crycode.configs.stylistic,
-];
+);
 ```
 
 Or for TypeScript:
 
 ```ts
-import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 import crycode from '@crycode/eslint-config';
 
-export default tseslint.config(
+export default defineConfig(
   ...crycode.configs.ts,
   ...crycode.configs.stylistic,
   {
@@ -59,6 +60,11 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+
+* Updated docs
+* Updated dependencies
+
 ### 3.1.0 (2026-02-20)
 
 * Added config for `@stylistic/operator-linebreak` rule
