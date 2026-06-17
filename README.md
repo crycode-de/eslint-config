@@ -60,7 +60,7 @@ If you habe multiple tsconfig files, add them all to `project` array:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 3.2.1 (2026-06-17)
 
 * Updated docs
 * Updated dependencies
